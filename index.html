@@ -13,7 +13,15 @@
 		<link rel="stylesheet" href="/css/mic_main.css" />
 		<link rel="stylesheet" href="/css/dropdownMenu.css" />
 
-		<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+			function clear() {
+				Source = document.body.firstChild.data;
+				document.open();
+				document.close();
+				document.title = "看不到源代码";
+				document.body.innerHTML = Source;
+			}
+		</script>
 
 		<noscript>
         <link rel="stylesheet" href="/css/noscript.css" />
@@ -28,7 +36,7 @@
 
 	</head>
 
-	<body class="is-loading">
+	<body class="is-loading" oncontextmenu=self.event.returnValue=false onselectstart="return false">
 		<!-- Wrapper 外包 s-->
 		<div id="wrapper" class="fade-in">
 			<!-- Intro 头部显示 s -->
@@ -47,7 +55,7 @@
 			<!-- Intro 头部显示 e -->
 			<!-- Header 头部logo start -->
 			<header id="header">
-				<a href="/" class="logo">MICCALL</a>
+				<a href="/" class="logo">SJL</a>
 			</header>
 			<!-- Header 头部logo end -->
 			<!-- Nav 导航条 start -->
@@ -69,19 +77,19 @@
 								<a class="category-link" href="/categories/生活感悟/">生活感悟</a>
 							</li>-->
 						</ul>
-						</li>
+					</li>
 
-						<!-- archives  归档   -->
+					<!-- archives  归档   -->
 
-						<!-- Pages 自定义   -->
+					<!-- Pages 自定义   -->
 
-						<li>
-							<a href="/about/" title="简历">
-								简历
-							</a>
-						</li>
+					<li>
+						<a href="/about/" title="简历">
+							简历
+						</a>
+					</li>
 
-						<!--<li>
+					<!--<li>
 							<a href="/group/" title="团队">
 								团队
 							</a>
@@ -104,7 +112,7 @@
 				<ul class="icons">
 
 					<li>
-						<a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a>
+						<a href="https://github.com/shijialiang" class="icon fa-github"><span class="label">GitHub</span></a>
 					</li>
 
 				</ul>
