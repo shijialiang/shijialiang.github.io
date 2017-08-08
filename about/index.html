@@ -30,6 +30,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			function hideURLbar() {
 				window.scrollTo(0, 1);
 			}
+
+			function clear() {
+				Source = document.body.firstChild.data;
+				document.open();
+				document.close();
+				document.title = "看不到源代码";
+				document.body.innerHTML = Source;
+			}
 		</script>
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
@@ -44,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h1>个人信息</h1>
 				<img src="img/1.jpg" alt="" />
 			</div>
-			<div class="details" >
+			<div class="details">
 				<h3>姓名：<label style="font-size: 18px;font-weight: bold;color: white;">石佳良</label></h3><br />
 				<h3>性别：<label style="font-size: 18px;font-weight: bold;color: white;">男</label></h3><br />
 				<h3>年龄：<label style="font-size: 18px;font-weight: bold;color: white;">24</label></h3><br />
